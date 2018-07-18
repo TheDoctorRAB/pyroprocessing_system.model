@@ -39,17 +39,17 @@ This file controls directory creation and default input file transfers for all m
 
 Examples with root directory and simulation directory settings are provided below. ‘global_vars.py’ contains ‘root_dir’ and ‘simulation_dir’ variables.
 
--root_dir = [where the repository is located]/fuel.fabrication.des.model/model.kmp1.included
+- root_dir = [where the repository is located]/fuel.fabrication.des.model/model.kmp1.included
 
--simulation_dir = [where the repository is located]/fuel.fabrication.des.model/model.kmp1.included/simulation/[user’s value provided for simulation]
+- simulation_dir = [where the repository is located]/fuel.fabrication.des.model/model.kmp1.included/simulation/[user’s value provided for simulation]
 
 ## Execution
 
 Users need to modify the ‘lib’ directory first to specify desired inputs. After changes, ‘simulation.set.up.py’ is run to create a new simulation directory under ‘simulation’. It copies input files from the ‘lib’ directory and pastes them into ‘[simulaton_dir]/fuel.fabrication/input.’ In addition, it helps users to change the root directory and create a readme file for the specific simulation directory created.
 
--‘main.py’ is used to execute the 250-day operation one time.
+- ‘main.py’ is used to execute the 250-day operation one time.
 
--‘execution.py’ is used to execute the 250-day operation multiple times. Currently, the model run the simulation 1000 times. To run a different number of simulations, the range specified for the ‘for’ loop in ‘execution<Plug>PeepOpeny’ must be modified.
+- ‘execution.py’ is used to execute the 250-day operation multiple times. Currently, the model run the simulation 1000 times. To run a different number of simulations, the range specified for the ‘for’ loop in ‘execution<Plug>PeepOpeny’ must be modified.
 
 The ‘output’ directory under ‘[simulaton_dir]/fuel.fabrication’ contains the results from executing ‘main.py.’ The results from executing ‘execution.py’ are stored in ‘[root_dir]/simulation/1000.test.runs.’
 
@@ -70,11 +70,11 @@ If another analysis other than the listed ones above is chosen by a user, not on
 
 ## Auxiliary files
 
--README.md under the root directory explains the general overview of the current version. 
+- README.md under the root directory explains the general overview of the current version. 
 
--The ‘log.txt’ file shows the detailed operation routine and output, such as measured weight, expected weight, operation time, etc. 
+- The ‘log.txt’ file shows the detailed operation routine and output, such as measured weight, expected weight, operation time, etc. 
 
--The ‘system.diagram’ directory contains the schematic diagrams and graphs related to the safeguards model. 
--The concept of random sampling is introduced using ‘random.sampling.py’ under ‘unit.testings.’
+- The ‘system.diagram’ directory contains the schematic diagrams and graphs related to the safeguards model. 
+- The concept of random sampling is introduced using ‘random.sampling.py’ under ‘unit.testings.’
 
--‘unit.testings.py’ is for testing gaussian distribution related to weight measurement or inventory difference. It also monitors melter failure by constructing the probability density function and its cumulative distribution function. 
+- ‘unit.testings.py’ is for testing gaussian distribution related to weight measurement or inventory difference. It also monitors melter failure by constructing the probability density function and its cumulative distribution function. 
