@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # System Designs
 
 Each folder contains a different design for this subprocess. 
@@ -79,7 +78,7 @@ If another analysis other than the listed ones above is chosen by a user, not on
 - The concept of random sampling is introduced using ‘random.sampling.py’ under ‘unit.testings.’
 
 - ‘unit.testings.py’ is for testing gaussian distribution related to weight measurement or inventory difference. It also monitors melter failure by constructing the probability density function and its cumulative distribution function. 
-=======
+
 # DES modeling for the pyroprocessing system
 
 ## Overview
@@ -113,4 +112,3 @@ The current model only supports up to Python2.x. Spyder would be ideal to run th
 ## For developers
 
 All source files are in the ‘src’ directory. Developers must test any functionalities or modification made on source code before the pull request. We need to add a travis file for checks but could use some help.
->>>>>>> master
