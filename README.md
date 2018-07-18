@@ -27,3 +27,7 @@ See the [CONTRIBUTING](CONTRIBUTING.md) file for more information.
 ## Prerequisite
 
 The current model only supports up to Python2.x. Spyder would be ideal to run the simulation and observe its process. It allows users to edit code and run files using IPython console.
+
+## For developers
+
+All source files are in the ‘src’ directory. Developers must test any functionalities or modification made on source code before the pull request. We need to add a travis file for checks but could use some help.
