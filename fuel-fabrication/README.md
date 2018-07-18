@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # System Designs
 
 Each folder contains a different design for this subprocess. 
